@@ -1,0 +1,23 @@
+PODS:
+  - Flutter (1.0.0)
+  - QueueITLibrary (3.0.14)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - QueueITLibrary (~> 3.0.3)
+
+SPEC REPOS:
+  trunk:
+    - QueueITLibrary
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  QueueITLibrary: cf3498f07bb711690f1bd4d28e4050034cc1d278
+
+PODFILE CHECKSUM: 0d61c4c5812c68d664d22464b8a3dbeea1d9d317
+
+COCOAPODS: 1.14.3
