@@ -76,15 +76,16 @@ import QueueITLibrary
     }
 
     func notifyQueueDisabled(_ queueDisabledInfo: QueueDisabledInfo?) {
-    let args = ["token": "token"] 
-
-    if let controller = self.window?.rootViewController as? FlutterViewController {
-        let queueChannel = FlutterMethodChannel(name: CHANNEL, binaryMessenger: controller.binaryMessenger)
-
-        queueChannel.invokeMethod("onQueueDisabled", arguments: args)
-    } else {
-        print("FlutterViewController no está disponible")
-    }
+      print("FlutterViewController no está disponible")
+      let args = ["token": "token"] 
+  
+      if let controller = self.window?.rootViewController as? FlutterViewController {
+          let queueChannel = FlutterMethodChannel(name: CHANNEL, binaryMessenger: controller.binaryMessenger)
+  
+          queueChannel.invokeMethod("onQueueDisabled", arguments: args)
+      } else {
+          print("FlutterViewController no está disponible")
+      }
     }
 
     func notifyQueueITUnavailable(_ errorMessage: String) {
